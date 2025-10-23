@@ -13,7 +13,7 @@ export default function middleware(req: NextRequest) {
     const [user, pwd] = atob(authValue).split(':')
 
     if (user === 'Density006' && pwd === 'dense') {
-      return NextResponse.next()
+      return NextResponse.redirect('https://sites.google.com/studio.digital/multitool/hw')
     }
   }
   url.pathname = '/api/auth'
