@@ -1,5 +1,5 @@
 import { withIronSessionApiRoute } from 'iron-session/next'
-import { sessionOptions } from '../../lib/session' // <-- This line is fixed
+import { sessionOptions } from '@/lib/session'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 function logoutRoute(req: NextApiRequest, res: NextApiResponse) {
